@@ -5,10 +5,12 @@ html(lang="en")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
     title ESSEC
-    //- link(rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous")
-    link(rel="stylesheet", href="lib/css-awesome/all.min.css")
-    link(rel="stylesheet", href="lib/css-awesome/brands.css")
-    link(rel="stylesheet" href="lib/glide/glide.core.min.css")
+    //- boootstrap style////////////
+    link(rel="icon" href="lib/bootstrap4/img/mdb-favicon.ico" type="image/x-icon")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css")
+    link(rel="stylesheet" href="lib/bootstrap4/css/bootstrap.min.css")
+    link(rel="stylesheet" href="lib/bootstrap4/css/mdb.min.css")
+    //- ///////////////////////- My style
     link(rel="stylesheet" href="css/style.min.css")
 
   body
@@ -21,10 +23,13 @@ html(lang="en")
       .wrap
         section.home-page__advantage.advantage
           //- include ../modules/advantage
-
-
     //- include ../modules/footer
 
     script(src="js/polyfill.min.js")
+    //- Bootstrap script
+    script(type="text/javascript" src="lib/bootstrap4/js/jquery.min.js" defer)
+    script(type="text/javascript" src="lib/bootstrap4/js/popper.min.js" defer)
+    script(type="text/javascript" src="lib/bootstrap4/js/bootstrap.min.js" defer)
+    script(type="text/javascript" src="lib/bootstrap4/js/mdb.min.js" defer)
+    //- My script
     script(src="js/script.js" defer)
-    
