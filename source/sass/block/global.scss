@@ -27,12 +27,10 @@ html, body {
   max-width: 100%;
   min-width: $mobile-width;
   overflow-x: hidden;
-  @include text;
 }
 
 a {
   text-decoration: none;
-  @include text;
 }
 
 ul {
@@ -51,6 +49,11 @@ ul {
   @include visually-hidden;
 }
 
-body {
-  background-color: aqua;
+html, body, header, #intro {
+  height: 100%;
+}
+#intro {
+  background-color: rgb(221, 125, 69);
+  background-image: url(../img/fox-bg.jpeg);
+  background-size: cover;
 }
