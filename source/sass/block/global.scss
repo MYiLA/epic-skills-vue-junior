@@ -53,7 +53,24 @@ html, body, header, #intro {
   height: 100%;
 }
 #intro {
+  background: url(../img/fox-bg.jpeg) no-repeat center center fixed;
   background-color: rgb(221, 125, 69);
-  background-image: url(../img/fox-bg.jpeg);
   background-size: cover;
 }
+
+.top-nav-collapse {
+  background-color: #c77509d5;
+}
+
+.btn{
+  i {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse){
+    background: #c77509d5;
+  }
+}
+

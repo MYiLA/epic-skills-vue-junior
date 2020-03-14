@@ -1,0 +1,35 @@
+section#contact
+  h2.mb-5.font-weight-bold.text-center Contact us
+  .row
+    .col-lg-5.col-md-12
+      form.p-5(action="POST")
+        .md-form.form-sm
+          i.fa.fa-user.prefix.grey-text
+          input#form3.form-control.form-control-sm(type="text" name="name")
+          label(for="form3") Your name
+        .md-form.form-sm
+          i.fa.fa-envelope.prefix.grey-text
+          input#form2.form-control.form-control-sm(type="text" name="email")
+          label(for="form2") Your email
+        .md-form.form-sm
+          i.fa.fa-tag.prefix.grey-text
+          input#form32.form-control.form-control-sm(type="text" name="subject")
+          label(for="form32") Subject
+        .md-form.form-sm
+          i.fa.fa-bug.prefix.grey-text
+          textarea#form8.md-textarea.form-control.form-control-sm(type="text" name="message", rows="4")
+          label(for="form8") Your message
+        .text-center.mt-4
+          button.btn.btn-primary.waves-effect.waves-light Send
+            i.fa.fa-guitar.ml-1
+    .col-lg-7.col-md-12
+      .row.text-center
+        .col-lg-4.col-md-12.mb-3
+          p #[i.fa.fa-map.fa-1x.mr-2.grey-text] London
+        .col-lg-4.col-md-6.mb-3
+          p #[i.fa.fa-building.fa-1x.mr-2.grey-text] Mon - Fri
+        .col-lg-4.col-md-6.mb-3
+          p #[i.fa.fa-phone.fa-1x.mr-2.grey-text] 8 800 555 35 35
+      #map-container.z-depth-1(style="height: 500px")
+        iframe(src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen)
+        
